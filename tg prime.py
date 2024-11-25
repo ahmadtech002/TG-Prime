@@ -1,12 +1,10 @@
-import os
-import time
-import csv
-from termcolor import colored
-import sys
+from pathlib import Path
 
-# File to store the hidden Telegram groups and channels
-FILE_NAME = "hidden_crypto_groups.txt"
-BACKUP_FILE_NAME = "hidden_crypto_groups_backup.txt"
+# Define base directory
+BASE_DIR = Path(__file__).resolve().parent
+FILE_NAME = BASE_DIR / "hidden_crypto_groups.txt"
+BACKUP_FILE_NAME = BASE_DIR / "hidden_crypto_groups_backup.txt"
+
 
 
 def initialize_file():
