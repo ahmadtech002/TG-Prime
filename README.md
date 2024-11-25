@@ -1,8 +1,12 @@
 # Telegram Group Manager
 
-This tool helps manage hidden crypto groups and channels on Telegram. It allows you to add, search, view, edit, delete, and export groups and channels.
+A Python tool for managing hidden crypto groups and channels on Telegram.
 
-## How to Use
-- **Install Python 3.x** if you haven't already.
-- **Run the script** using: `python telegram_group_manager.py`
+## Requirements
+- Python 3.x
+- `termcolor` library
 
+## Installation Instructions
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/telegram-group-manager.git
