@@ -1,9 +1,23 @@
+import os
+import time
+import csv
+from termcolor import colored
+import sys
 from pathlib import Path
 
-# Define base directory
+# File to store the hidden Telegram groups and channels
 BASE_DIR = Path(__file__).resolve().parent
 FILE_NAME = BASE_DIR / "hidden_crypto_groups.txt"
 BACKUP_FILE_NAME = BASE_DIR / "hidden_crypto_groups_backup.txt"
+
+def initialize_file():
+    """Initialize the file if it doesn't exist."""
+    if not FILE_NAME.exists():
+        with open(FILE_NAME, 'w') as file:
+            file.write("# Hidden Crypto Groups and Channels on Telegram\n")
+
+# Rest of the code remains the same, making sure to use FILE_NAME and BACKUP_FILE_NAME appropriately.
+
 
 
 
